@@ -1,0 +1,369 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.centerdashboard {
+  border: 1px solid #4CDBFF;
+  height: 40px;
+  padding: 5px;
+  width: 85.5%;
+  margin-left: 8.2%;
+  margin-right: auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: -125px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomdashboard {
+  bottom: 0;
+  position: absolute;
+  left: 1px;
+  right: 0;
+  border: 1px solid #4CDBFF;
+  height: 40px;
+  padding: 5px;
+  width: 85.5%;
+  margin-right: auto;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 3;
+}
+
+.command-history {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 5px; /* Adjust the left property to set the distance from the left border */
+  width: 380px;
+  margin-top: 2px;
+  color: white;
+}
+
+.command-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.command-history li {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.dashboardname {
+  color: white;
+  font-size: 18px;
+}
+
+.right-menu {
+  height: 99.8%;
+  border: 1px solid #4CDBFF;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 13%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.icons-right {
+  /* Adjust positioning as needed */
+  border-bottom: 1px solid #4CDBFF;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  z-index: 2;
+}
+
+.iconDesign,
+.iconStructure {
+  display: flex;
+  align-items: center;
+  background-color: #FF0000;
+  margin-top: 5px;
+  margin-left: 10px;
+  height: 30px;
+  width: 10px;
+}
+
+.iconName,
+.featuresName {
+  color: white;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2.2px;
+  padding-top: 0;
+  height: calc(100% - 55px);
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: none; /* Optional: Add scrollbar for better user experience */
+}
+
+.featuresName {
+  margin-bottom: 8px; /* Add margin to the bottom of the title */
+}
+
+.right-menu-button {
+  display: flex;
+  align-items: center;
+  width: 99%;
+  height: 35px;
+  background-color: #222;
+  border-radius: 5px;
+  color: #4CDBFF;
+  padding: 10px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.right-menu-button:nth-child(1) {
+  margin-top: 5px;
+}
+
+.right-menu-button span {
+  margin-left: 5px;
+  text-align: left;
+}
+.monitor {
+  border-left: 1px solid #4CDBFF;
+  border-right: 1px solid #4CDBFF;
+  height: 89%;
+  width: 86.15%;
+  left: 1px;
+  margin-top: 12px;
+  margin-right: auto;
+  position: absolute;
+  top: 40px;
+  z-index: 3;
+  background: url('.//assets/purplespacebackground.jpg') center/100% 100% no-repeat
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.weather-forecast {
+  position: absolute;
+  display: flex;
+  top: 5px;
+  left: 5px;
+  width: 22.5%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  border: #4CDBFF 1px solid;
+  box-shadow: 0 2px 3.84px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.alignment {
+  text-align: left;
+}
+
+.weather-forecast h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.forecast-day {
+  border: 1px solid transparent;
+  width: 85px;
+}
+
+.right-alignmentstyle {
+  border: transparent 1px solid;
+  margin-left: 105px;
+  margin-top: -23px;
+  width: 185px; /* Decreased width */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.weather-icon {
+  font-size: 1px;
+  margin-right: 5px;
+}
+
+.forecast-item {
+  border: transparent 1px solid;
+  width: 300px;
+}
+
+.weather-temperature,
+.weather-description {
+  font-size: 15px;
+}
+
+
+.iconContainer{
+  display: flex;
+  left: 15px;
+  position: absolute;
+}
+.dbicons {
+  right: 15px;
+  position: absolute;
+  display: flex;
+}
+
+.dashboard-icon {
+  color: #4cdbff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.bottom-info {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+.bottom-left,
+.bottom-right {
+  margin: 0 10px;
+}
+
+.latest-commands {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.latest-commands span {
+  margin-right: 5px;
+}
+
+.command-history h2 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-left: 6px;
+  display: inline; /* Make h2 display inline */
+}
+.newsContainer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: #4CDBFF 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.newsTitleContainer {
+  position: fixed;
+  background-color: transparent;
+  text-align: left;
+}
+
+.newsListContainer {
+  flex: 1;
+  text-align: left;
+  margin-top: 30px;
+  height: 315px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: none; /* Optional: Add scrollbar for better user experience */
+}
+
+.newsItem {
+  margin-bottom: 10px;
+}
+
+.news {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.newsTitle {
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.newsDescription {
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.power-off-button-container {
+  position: absolute;
+  left: 49%;
+  transform: translateX(-50%);
+  bottom: 15%;
+  width: 35px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.power-off-icon {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #4CDBFF; /* Adjust the color as needed */
+}
+.motivational-quote-container {
+  position: absolute;
+  right: 5px; /* Adjust the right distance as needed */
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 370px; /* Adjust the width as needed */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.motivational-quote {
+  margin: 0;
+  animation: quoteScroll 60s linear infinite;
+  font-weight: bold;
+}
